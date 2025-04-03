@@ -6,7 +6,7 @@
   min-height: 50rem;
 }
 .header {
-  height: 7rem;
+  height: 8rem;
   background-color: #fff;
   border-bottom: var(--gray-light-2);
   display: flex;
@@ -17,6 +17,7 @@
  
 .content {
   display: flex;
+  //margin-top: 5rem;
 
   & .sidebar {
     background-color: var(--grey-dark-1);
@@ -25,7 +26,8 @@
   }
 
   & .hotel-view {
-    background-color: #fff;
+    background-color: #f12f2f;
     flex: 1;
+    height: 80rem;
   }
 }
