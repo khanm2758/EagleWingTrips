@@ -8,7 +8,7 @@
 .header {
   height: 8rem;
   background-color: #fff;
-  border-bottom: var(--gray-light-2);
+  border-bottom: 2px solid #dddddd;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,7 +26,7 @@
   }
 
   & .hotel-view {
-    background-color: #f12f2f;
+    
     flex: 1;
     height: 80rem;
   }
