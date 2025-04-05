@@ -5,16 +5,17 @@
   box-shadow: var(--shadow-light-dark);
   min-height: 50rem;
 }
+// ====================================================
 .header {
   height: 8rem;
   background-color: #fff;
-  border-bottom: 2px solid #dddddd;
+  border-bottom: var(--line);
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.4rem;
 }
- 
+// ==================================================== 
 .content {
   display: flex;
   //margin-top: 5rem;
@@ -28,6 +29,27 @@
   & .hotel-view {
     
     flex: 1;
-    height: 80rem;
+    //height: 80rem;
   }
 }
+// ====================================================
+
+.details{ //main class
+  display: flex;
+  column-gap: 4.5rem;
+  padding: 4.5rem;
+  background-color: var(--grey-light-3);
+  border-bottom: var(--line);
+  font-size: 1.4rem;
+}
+.description{  //inside details class
+  background-color: #fff;
+  flex: 0 0 70%;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  
+}
+.user-review{ //inside details class
+ 
+  flex: 1;
+} 

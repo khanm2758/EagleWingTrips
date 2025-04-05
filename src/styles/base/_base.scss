@@ -11,7 +11,7 @@
 // grey dark 2: #777
 // grey dark 3: #999
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-$grey-light-5: #ddd;
+
 :root {
   --primary: #eb2f64;
   --primary-light: #ff3366;
@@ -27,6 +27,8 @@ $grey-light-5: #ddd;
   --grey-dark-3: #999;
 
   --shadow-light-dark: 0 2rem 6rem rgba(0,0,0, 0.3);
+  --shadow-light: 0 2rem 6rem rgba(0,0,0, 0.1);
+  --line: 2px solid #dddddd;
 }
 
 * {
