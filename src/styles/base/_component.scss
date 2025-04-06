@@ -404,11 +404,15 @@
     margin-right: 0.4rem;
 
     // Older browser approach
-    // background: url("../../../asset/img/chevron-thin-right.svg");
-    // background-size: cover;
+    background-image: url("../../../asset/img/chevron-thin-right.svg");
+    background-size: cover;
     background-color: var(--primary);
-    mask-image: url("../../../asset/img/chevron-thin-right.svg");
-    mask-size: cover;
+    @supports(-webkit-mask-image: url()) or (mask-image: url()) {
+
+      mask-image: url("../../../asset/img/chevron-thin-right.svg");
+      mask-size: cover;
+      background-image: none;
+    }
   }
 }
 
