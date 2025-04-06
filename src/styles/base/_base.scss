@@ -1,15 +1,4 @@
-// primary: #eb2f64
-// primary light: #FF3366
-// primary dark: #BA265D
 
-// grey light 1: #faf9f9
-// grey light 2: #f4f2f2
-// grey light 3: #f0eeee
-// grey light 4: #ccc
-
-// grey dark 1: #333
-// grey dark 2: #777
-// grey dark 3: #999
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 :root {
@@ -31,6 +20,19 @@
   --line: 2px solid #dddddd;
 }
 
+
+
+
+// Desktop first approach
+$first-large-bp: 75em; // 1200px / 16 = 75em
+$second-large-bp: 74.9375em; // 1199px / 16 = 74.9375em
+$first-medium-bp: 60em; // 960px / 16px = 60em
+$second-medium-bp: 45.3125em; // 725px / 16px = 45.3125em
+$first-small-bp: 31.25em; // 500px / 16px = 31.25em
+$second-small-bp: 30.3125em; // 485px / 16px = 30.3125em
+$third-small-bp: 25em; // 485px / 16px = 25em
+
+
 * {
   padding: 0;
   margin: 0;
@@ -45,6 +47,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 10px / 16px = .625 or 62.5%
+
+  @media only screen and (max-width: $second-large-bp){
+      font-size: 50%;
+  }
 }
 
 body {
