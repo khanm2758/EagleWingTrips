@@ -7,9 +7,9 @@
   box-shadow: var(--shadow-light-dark);
   min-height: 50rem;
 
-  @media only screen and (max-width: $first-large-bp ){
-        margin: 0;
-        max-width: 100%;
+  @media only screen and (max-width: $first-large-bp) {
+    margin: 0;
+    max-width: 100%;
   }
 }
 // ====================================================
@@ -22,19 +22,19 @@
   align-items: center;
   font-size: 1.4rem;
 
-  @media only screen and (max-width: $first-small-bp){
+  @media only screen and (max-width: $first-small-bp) {
     flex-wrap: wrap;
     height: 12rem;
     align-content: space-around;
+  }
 }
-}
-// ==================================================== 
+// ====================================================
 .content {
   display: flex;
   //margin-top: 5rem;
 
-  @media only screen and (max-width: $first-medium-bp){
-      flex-direction: column;
+  @media only screen and (max-width: $first-medium-bp) {
+    flex-direction: column;
   }
 
   & .sidebar {
@@ -44,14 +44,14 @@
   }
 
   & .hotel-view {
-    
     flex: 1;
     //height: 80rem;
   }
 }
 // ====================================================
 
-.details{ //main class
+.details {
+  //main class
   display: flex;
   column-gap: 4.5rem;
   padding: 4.5rem;
@@ -59,33 +59,34 @@
   border-bottom: var(--line);
   font-size: 1.4rem;
 
-  @media only screen and (max-width: $first-medium-bp){
+  @media only screen and (max-width: $first-medium-bp) {
     column-gap: 2rem;
     padding: 2rem;
- }
- @media only screen and (max-width: $second-medium-bp){
+  }
+  @media only screen and (max-width: $second-medium-bp) {
     flex-direction: column;
- }
+  }
 }
-.description{  //inside details class
-  background-color: #fff;
+.description {
+  //inside details class
+  background-color: var(--grey-light-1);
   flex: 0 0 70%;
   box-shadow: var(--shadow-light);
   padding: 3rem;
-  
-  @media only screen and (max-width: $first-medium-bp){
-    
+
+  @media only screen and (max-width: $first-medium-bp) {
     padding: 2rem;
- }
- @media only screen and (max-width: $second-medium-bp){
-    padding: 0;
+  }
+  @media only screen and (max-width: $second-medium-bp) {
+    padding: 1;
     margin-bottom: 1.7rem;
+  }
 }
-  
-}
-.user-review{ //inside details class
+.user-review {
+  //inside details class
   display: flex;
   flex-direction: column;
   align-items: center;
   flex: 1;
-} 
+  background-color: var(--grey-light-1);
+}
